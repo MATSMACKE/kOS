@@ -31,14 +31,14 @@ function main {
         keepVelocity2d(translateSpeed, 0).
     }
 
-    until ship:groundspeed < 1 {
-        keepVelocity2d(0, 0, 2).
-    }
+    //until ship:groundspeed < 1 {
+        //keepVelocity2d(0, 0, 2).
+    //}
 
-    translateTo(launchSiteLat, launchSiteLng).
+    //translateTo(launchSiteLat, launchSiteLng).
 
     lock throttle to 0.
-    runpath("0:/suicide.ks").
+    runpath("0:/kOS/suicide.ks").
 }
 
 function translateTo {
